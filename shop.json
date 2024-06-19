@@ -1,0 +1,135 @@
+{
+    "users": [
+      {
+        "id": 1,
+        "name": "John Doe",
+        "email": "john.doe@example.com",
+        "roles": ["admin", "user"],
+        "address": {
+          "street": "123 Main St",
+          "city": "Anytown",
+          "state": "CA",
+          "zip": "12345"
+        },
+        "orders": [
+          {
+            "orderId": "od-123",
+            "date": "2024-06-01",
+            "status": "shipped",
+            "details": [
+              {
+                "productId": "p-001",
+                "productName": "Widget A",
+                "quantity": 2
+              },
+              {
+                "productId": "p-002",
+                "productName": "Widget B",
+                "quantity": 1
+              }
+            ]
+          },
+          {
+            "orderId": "od-124",
+            "date": "2024-06-15",
+            "status": "processing",
+            "details": [
+              {
+                "productId": "p-003",
+                "productName": "Gadget X",
+                "quantity": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Jane Smith",
+        "email": "jane.smith@example.com",
+        "roles": ["user"],
+        "address": {
+          "street": "456 Oak Lane",
+          "city": "Somecity",
+          "state": "TX",
+          "zip": "67890"
+        },
+        "orders": [
+          {
+            "orderId": "od-125",
+            "date": "2024-06-10",
+            "status": "delivered",
+            "details": [
+              {
+                "productId": "p-004",
+                "productName": "Thingamajig C",
+                "quantity": 1
+              },
+              {
+                "productId": "p-005",
+                "productName": "Thingamajig D",
+                "quantity": 2
+              },
+              {
+                "productId": "p-006",
+                "productName": "Thingamajig E",
+                "quantity": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Emily Johnson",
+        "email": "emily.johnson@example.com",
+        "roles": ["editor", "user"],
+        "address": {
+          "street": "789 Pine Road",
+          "city": "Othertown",
+          "state": "NY",
+          "zip": "10112"
+        },
+        "orders": []
+      }
+    ],
+    "products": [
+      {
+        "productId": "p-001",
+        "productName": "Widget A",
+        "price": 19.99,
+        "stock": 100
+      },
+      {
+        "productId": "p-002",
+        "productName": "Widget B",
+        "price": 29.99,
+        "stock": 50
+      },
+      {
+        "productId": "p-003",
+        "productName": "Gadget X",
+        "price": 99.99,
+        "stock": 20
+      },
+      {
+        "productId": "p-004",
+        "productName": "Thingamajig C",
+        "price": 9.99,
+        "stock": 200
+      },
+      {
+        "productId": "p-005",
+        "productName": "Thingamajig D",
+        "price": 14.99,
+        "stock": 150
+      },
+      {
+        "productId": "p-006",
+        "productName": "Thingamajig E",
+        "price": 24.99,
+        "stock": 75
+      }
+    ]
+  }
+  
