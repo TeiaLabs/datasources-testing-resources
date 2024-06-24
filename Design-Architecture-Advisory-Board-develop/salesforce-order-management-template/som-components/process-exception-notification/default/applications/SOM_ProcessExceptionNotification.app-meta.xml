@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <logo>SOM_PENotificationAppLogo</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <description>Create configurations (for triggering the notification) using user interface based on sales channel, recipients, process exception category, severity and status.</description>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <label>SOM Process Exception Notification</label>
+    <navType>Standard</navType>
+    <tabs>SOM_ProcessExceptionNotification</tabs>
+    <tabs>SOM_PEConfiguration__c</tabs>
+    <tabs>standard-SalesChannel</tabs>
+    <tabs>standard-ProcessException</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>SOM_ProcessExceptionNotification_UtilityBar</utilityBar>
+</CustomApplication>

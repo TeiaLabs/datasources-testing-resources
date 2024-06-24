@@ -1,0 +1,34 @@
+{
+  "edition": "Enterprise",
+  "language": "en_US",
+  "features": [
+    "RecordTypes",
+    "PersonAccounts", 
+    "ProcessBuilder", 
+    "OrderManagement", 
+    "OmnichannelInventory"
+  ],
+  "settings": {
+    "orderSettings": {
+      "enableOrders": true,
+      "enableOrderEvents": true,
+      "enableNegativeQuantity": true,
+      "enableZeroQuantity": true,
+      "enableEnhancedCommerceOrders": true,
+      "enableOptionalPricebook": true
+    },
+    "orderManagementSettings": {
+        "enableOrderManagement": true,
+        "enableB2CIntegration": true,
+        "enableB2CSelfService": true,
+        "enablePersonAccountsForShoppers": true
+    },
+    "inventorySettings": {
+      "enableOCIB2CIntegration": true,
+      "enableOmniChannelInventory": true
+    },
+    "userManagementSettings": {
+      "enableNewProfileUI": true
+    }
+  }
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CancelAuthorizationStatus__c</fullName>
+    <description>Status of the payment authorization cancellation</description>
+    <externalId>false</externalId>
+    <label>Authorization Cancellation Status</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>RequestSent</fullName>
+                <default>false</default>
+                <label>RequestSent</label>
+            </value>
+            <value>
+                <fullName>AuthorizationReleased</fullName>
+                <default>false</default>
+                <label>AuthorizationReleased</label>
+            </value>
+            <value>
+                <fullName>RequestFailed</fullName>
+                <default>false</default>
+                <label>RequestFailed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

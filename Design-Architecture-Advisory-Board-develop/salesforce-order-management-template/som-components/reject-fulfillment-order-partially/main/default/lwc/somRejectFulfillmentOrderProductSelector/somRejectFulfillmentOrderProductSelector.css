@@ -1,0 +1,31 @@
+.disabledRow {
+    pointer-events: none;
+    opacity: 0.3;
+}
+
+.flexCb {
+    display: flex;
+}
+
+.flexDiv {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.slds-modal__container {
+    max-width: 100rem !important;
+    width: 80% !important;
+}
+
+.slds-modal__content {
+    overflow: initial !important;
+}
+
+.slds-max-medium-table_stacked th,
+.slds-max-medium-table_stacked td,
+.slds-max-medium-table--stacked th,
+.slds-max-medium-table--stacked td {
+    overflow: initial !important;
+}

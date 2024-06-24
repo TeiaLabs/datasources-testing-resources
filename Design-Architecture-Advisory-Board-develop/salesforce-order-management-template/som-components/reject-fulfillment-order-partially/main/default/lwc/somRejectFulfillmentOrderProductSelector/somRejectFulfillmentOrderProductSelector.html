@@ -1,0 +1,51 @@
+<template>
+    <table class="slds-table slds-table--bordered slds-modal_large slds-max-medium-table_stacked">
+        <thead>
+            <tr class="slds-text-title">
+                <th scope="col">
+                    <lightning-input type="checkbox" data-control="masterCheckbox" onchange={masterCheckboxChanged} checked></lightning-input>
+                </th>
+                <th scope="col">
+                    <div class="slds-truncate slds-text-title">Product</div>
+                </th>
+                <th scope="col">
+                    <div class="slds-truncate slds-text-title">Quantity</div>
+                </th>
+                <th scope="col">
+                    <div class="slds-truncate slds-text-title">Reason</div>
+                </th>
+                <th scope="col">
+                    <div class="slds-truncate slds-text-title">Total</div>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <template for:each={inputItemListTemp} for:item="item">
+                <tr key={item.fulfillmentItemId}>
+                    <td>
+                        <lightning-input data-id={item.fulfillmentItemId} data-control="checkbox" type="checkbox" onchange={checkboxChanged} checked></lightning-input>
+                    </td>
+                    <td data-id={item.fulfillmentItemId} data-element="content" title={item.description}>
+                        {item.productName} {item.shortDescription}
+                    </td>
+                    <td data-id={item.fulfillmentItemId} data-element="content">
+                        <div class="flexCb">
+                            <div>
+                                <lightning-combobox data-id={item.fulfillmentItemId} variant="label-hidden" options={item.quantityOptions} value={item.quantityText} onchange={quantityChanged}></lightning-combobox>
+                            </div>
+                            <div class="flexDiv">
+                                &nbsp; of {item.quantity}
+                            </div>
+                        </div>
+                    </td>
+                    <td data-id={item.fulfillmentItemId} data-element="content">
+                        <lightning-combobox data-id={item.fulfillmentItemId} variant="label-hidden" options={item.reasonOptions} value={item.reason} onchange={reasonChanged}></lightning-combobox>
+                    </td>
+                    <td data-id={item.fulfillmentItemId} data-element="content">
+                        <lightning-formatted-number value={item.totalWithTax} format-style="currency" currency-code={currencyCode} minimum-fraction-digits="2" maximum-fraction-digits="2"></lightning-formatted-number>
+                    </td>
+                </tr>
+            </template>
+        </tbody>
+    </table>
+</template>

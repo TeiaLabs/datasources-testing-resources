@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <collectionProcessors>
+        <name>Limit_collection</name>
+        <elementSubtype>SortCollectionProcessor</elementSubtype>
+        <label>Limit collection</label>
+        <locationX>50</locationX>
+        <locationY>516</locationY>
+        <collectionProcessorType>SortCollectionProcessor</collectionProcessorType>
+        <collectionReference>Get_SOM_Logs</collectionReference>
+        <connector>
+            <targetReference>Delete_SOM_Logs</targetReference>
+        </connector>
+        <limit>10000</limit>
+        <sortOptions>
+            <doesPutEmptyStringAndNullFirst>false</doesPutEmptyStringAndNullFirst>
+            <sortField>Id</sortField>
+            <sortOrder>Asc</sortOrder>
+        </sortOptions>
+    </collectionProcessors>
+    <constants>
+        <name>DaysToDecreaseFromCurrentDate</name>
+        <dataType>Number</dataType>
+        <value>
+            <numberValue>30.0</numberValue>
+        </value>
+    </constants>
+    <decisions>
+        <name>Exist_Logs_to_Delete</name>
+        <label>Exist Logs to Delete</label>
+        <locationX>182</locationX>
+        <locationY>396</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Exist_Logs</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_SOM_Logs</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Limit_collection</targetReference>
+            </connector>
+            <label>Exist Logs</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <name>Date_To_Get_Logs_Created_Before_It</name>
+        <dataType>Date</dataType>
+        <expression>{!$Flow.CurrentDateTime} - {!DaysToDecreaseFromCurrentDate}</expression>
+    </formulas>
+    <interviewLabel>SOM Clear Old Logs {!$Flow.CurrentDateTime}</interviewLabel>
+    <isTemplate>true</isTemplate>
+    <label>SOM Clear Old Logs</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordDeletes>
+        <name>Delete_SOM_Logs</name>
+        <label>Delete SOM Logs</label>
+        <locationX>50</locationX>
+        <locationY>636</locationY>
+        <inputReference>Get_SOM_Logs</inputReference>
+    </recordDeletes>
+    <recordLookups>
+        <name>Get_SOM_Logs</name>
+        <label>Get SOM Logs</label>
+        <locationX>182</locationX>
+        <locationY>276</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Exist_Logs_to_Delete</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>CreatedDate</field>
+            <operator>LessThanOrEqualTo</operator>
+            <value>
+                <elementReference>Date_To_Get_Logs_Created_Before_It</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>SOM_Log__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_SOM_Logs</targetReference>
+        </connector>
+        <schedule>
+            <frequency>Weekly</frequency>
+            <startDate>2022-05-01</startDate>
+            <startTime>00:00:00.000Z</startTime>
+        </schedule>
+        <triggerType>Scheduled</triggerType>
+    </start>
+    <status>Draft</status>
+</Flow>

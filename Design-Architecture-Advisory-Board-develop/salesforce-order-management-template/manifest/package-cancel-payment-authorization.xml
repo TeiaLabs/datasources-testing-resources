@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>SOM_AdyenAuthorizationCancelHandler</members>
+		<members>SOM_BaseCancelAuthorizationHandler</members>
+		<members>SOM_BaseCancelAuthorizationHandlerTest</members>
+		<members>SOM_CancelAuthorizationsBatch</members>
+		<members>SOM_CancelAuthorizationHandler</members>
+		<members>SOM_CancelAuthorizationHandlerTest</members>
+		<members>SOM_CancelAuthorizationRequest</members>
+		<members>SOM_CancelAuthorizationResponse</members>
+		<members>SOM_CancelPaymentAuthNotification</members>
+		<members>SOM_NotificationListener</members>
+		<members>SOM_NotificationListenerTest</members>
+		<members>SOM_CancelPaymentAuthorizationConstants</members>
+		<members>SOM_CancelAuthorizationHandler</members>
+		<members>SOM_CancelAuthorizationHandlerTest</members>
+		<members>SOM_CancelPaymentAuthRestDataFactory</members>
+		<members>SOM_CancelPaymentAuthRestSuccessMock</members>
+		<members>SOM_PaymentGatewayUtil</members>
+		<members>SOM_PaymentGatewayUtilTest</members>
+		<members>SOM_PaypalPaymentAdapter</members>
+		<name>ApexClass</name>
+	</types>
+	<types>
+		<members>CancelPaymentAuthorization</members>
+		<name>ApexTestSuite</name>
+	</types>
+	<types>
+		<members>OrderSummary.CancelAuthorizationRetryAttempts__c</members>
+		<members>OrderSummary.CancelAuthorizationStatus__c</members>
+		<members>SalesChannel.MerchantAccountId__c</members>
+		<members>SOM_CancelAuthorizationEvent__e.OrderSummaryId__c</members>
+		<members>SOM_PaymentGatewayInfo__mdt.CalloutURL__c</members>
+		<members>SOM_PaymentGatewayInfo__mdt.GatewayName__c</members>
+		<name>CustomField</name>
+	</types>
+	<types>
+		<members>SOM_BatchConfiguration.Cancel_Authorization</members>
+		<name>CustomMetadata</name>
+	</types>
+	<types>
+		<members>SOM_CancelAuthorizationEvent__e</members>
+		<members>SOM_PaymentGatewayInfo__mdt</members>
+		<name>CustomObject</name>
+	</types>
+	<types>
+		<members>SOM_Authorization_Cancel</members>
+		<name>PermissionSet</name>
+	</types>
+	<types>
+		<members>SOM_CancelPaymentAuthorization</members>
+		<members>SOM_CancelPaymentAuthorizationAdapter</members>
+		<name>Flow</name>
+	</types>
+	<types>
+		<members>OrderSummary-OS Cancel Payment Authorization Layout</members>
+		<members>SalesChannel-Sales Channel Layout</members>
+		<members>SOM_PaymentGatewayInfo__mdt-SOM_Payment Gateway Info Cancel Payment Authorization Layout</members>
+		<name>Layout</name>
+	</types>
+	<version>55.0</version>
+</Package>

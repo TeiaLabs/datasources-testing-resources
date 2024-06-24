@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>SOM_Cancel</fullName>
+        <categories>SOM_ProcessExceptionNotification</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SOM_Cancel</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>SOM_ChatterConfigurationCardTitle</fullName>
+        <categories>SOM_ProcessExceptionNotification</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SOM_ChatterConfigurationCardTitle</shortDescription>
+        <value>Create Chatter Notification Configurations</value>
+    </labels>
+    <labels>
+        <fullName>SOM_ChatterConfigurationMessageLabel</fullName>
+        <categories>SOM_ProcessExceptionNotification</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SOM_ChatterConfigurationMessageLabel</shortDescription>
+        <value>Message:</value>
+    </labels>
+    <labels>
+        <fullName>SOM_ChatterConfigurationMessagePlaceHolder</fullName>
+        <categories>SOM_ProcessExceptionNotification</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SOM_ChatterConfigurationMessagePlaceHolder</shortDescription>
+        <value>Message</value>
+    </labels>
+    <labels>
+        <fullName>SOM_ChatterConfigurationPostOptionsLabel</fullName>
+        <categories>SOM_ProcessExceptionNotification</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SOM_ChatterConfigurationPostOptionsLabel</shortDescription>
+        <value>Post Options</value>
+    </labels>
+    <labels>
+        <fullName>SOM_ChatterConfigurationPostToRelatedFalseOptionLabel</fullName>
+        <categories>SOM_ProcessExceptionNotification</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SOM_ChatterConfigurationPostToRelatedFalseOptionLabel</shortDescription>
+        <value>Post to OrderSummary record</value>
+    </labels>
+    <labels>
+        <fullName>SOM_ChatterConfigurationPostToRelatedTrueOptionLabel</fullName>
+        <categories>SOM_ProcessExceptionNotification</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SOM_ChatterConfigurationPostToRelatedTrueOptionLabel</shortDescription>
+        <value>Post to OrderSummary &amp; related record</value>
+    </labels>
+    <labels>
+        <fullName>SOM_Close</fullName>
+        <categories>SOM_ProcessExceptionNotification</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SOM_Close</shortDescription>
+        <value>Close</value>
+    </labels>
+    <labels>
+        <fullName>SOM_CurrentConfigurationNotReceivedErrorMessage</fullName>
+        <categories>SOM_ProcessExceptionNotification</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SOM_CurrentConfigurationNotReceivedErrorMessage</shortDescription>
+        <value>Selected configuration could not be received</value>
+    </labels>
+    <labels>
+        <fullName>SOM_CustomNotificationConfigurationCardTitle</fullName>
+        <categories>SOM_ProcessExceptionNotification</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SOM_CustomNotificationConfigurationCardTitle</shortDescription>
+        <value>Create Custom Notification Configurations</value>
+    </labels>
+    <labels>
+        <fullName>SOM_CustomNotificationConfigurationMessageLabel</fullName>
+        <categories>SOM_ProcessExceptionNotification</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SOM_CustomNotificationConfigurationMessageLabel</shortDescription>
+        <value>Message:</value>
+    </labels>
+    <labels>
+        <fullName>SOM_CustomNotificationConfigurationNotificationTypeLabel</fullName>
+        <categories>SOM_ProcessExceptionNotification</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SOM_CustomNotificationConfigurationNotificationTypeLabel</shortDescription>
+        <value>Notification Type:</value>
+    </labels>
+    <labels>
+        <fullName>SOM_CustomNotificationConfigurationNotificationTypePlaceHolder</fullName>
+        <categories>SOM_ProcessExceptionNotification</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SOM_CustomNotificationConfigurationNotificationTypePlaceHolder</shortDescription>
+        <value>Select Notification Type</value>
+    </labels>
+    <labels>
+        <fullName>SOM_CustomNotificationConfigurationTitleLabel</fullName>
+        <categories>SOM_ProcessExceptionNotification</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SOM_CustomNotificationConfigurationTitleLabel</shortDescription>
+        <value>Title:</value>
+    </labels>
+    <labels>
+        <fullName>SOM_EmailConfigurationBodyLabel</fullName>
+        <categories>SOM_ProcessExceptionNotification</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SOM_EmailConfigurationBodyLabel</shortDescription>
+        <value>Body</value>
+    </labels>
+    <labels>
+        <fullName>SOM_EmailConfigurationCardTitle</fullName>
+        <categories>SOM_ProcessExceptionNotification</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SOM_EmailConfigurationCardTitle</shortDescription>
+        <value>Create Email Notification Configurations</value>
+    </labels>
+    <labels>
+        <fullName>SOM_EmailConfigurationSubjectLabel</fullName>
+        <categories>SOM_ProcessExceptionNotification</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SOM_EmailConfigurationSubjectLabel</shortDescription>
+        <value>Subject</value>
+    </labels>
+    <labels>
+        <fullName>SOM_NoPEConfigurationOptionsMessage</fullName>
+        <categories>SOM_ProcessExceptionNotification</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SOM_NoPEConfigurationOptionsMessage</shortDescription>
+        <value>Configuration options could not be received</value>
+    </labels>
+    <labels>
+        <fullName>SOM_NoProcessExceptionCategoryValuesMessage</fullName>
+        <categories>SOM_ProcessExceptionNotification</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SOM_NoProcessExceptionCategoryValuesMessage</shortDescription>
+        <value>Category options could not be received</value>
+    </labels>
+    <labels>
+        <fullName>SOM_NoProcessExceptionRecordTypeMessage</fullName>
+        <categories>SOM_ProcessExceptionNotification</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SOM_NoProcessExceptionRecordTypeMessage</shortDescription>
+        <value>Process Exception record type could not be received</value>
+    </labels>
+    <labels>
+        <fullName>SOM_NoProcessExceptionSeverityValuesMessage</fullName>
+        <categories>SOM_ProcessExceptionNotification</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SOM_NoProcessExceptionSeverityValuesMessage</shortDescription>
+        <value>Severity options could not be received</value>
+    </labels>
+    <labels>
+        <fullName>SOM_NoProcessExceptionStatusValuesMessage</fullName>
+        <categories>SOM_ProcessExceptionNotification</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SOM_NoProcessExceptionStatusValuesMessage</shortDescription>
+        <value>Status options could not be received</value>
+    </labels>
+    <labels>
+        <fullName>SOM_PEConfigurationAlreadyExistErrorMessage</fullName>
+        <categories>SOM_ProcessExceptionNotification</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SOM_PEConfigurationAlreadyExistErrorMessage</shortDescription>
+        <value>Notification configuration already exist</value>
+    </labels>
+    <labels>
+        <fullName>SOM_PEConfigurationInvalidPicklistValuesErrorMessage</fullName>
+        <categories>SOM_ProcessExceptionNotification</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SOM_PEConfigurationInvalidPicklistValuesErrorMessage</shortDescription>
+        <value>At least one value should be added from category, status or severity fields</value>
+    </labels>
+    <labels>
+        <fullName>SOM_PEConfigurationNameLabel</fullName>
+        <categories>SOM_ProcessExceptionNotification</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SOM_PEConfigurationNameLabel</shortDescription>
+        <value>Configuration Name:</value>
+    </labels>
+    <labels>
+        <fullName>SOM_PEConfigurationNoRecipientErrorMessage</fullName>
+        <categories>SOM_ProcessExceptionNotification</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SOM_PEConfigurationNoRecipientErrorMessage</shortDescription>
+        <value>At least one recipient should be selected</value>
+    </labels>
+    <labels>
+        <fullName>SOM_PEConfigurationNoRecipientLabelsErrorMessage</fullName>
+        <categories>SOM_ProcessExceptionNotification</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SOM_PEConfigurationNoRecipientLabelsErrorMessage</shortDescription>
+        <value>Recipient labels could not be received</value>
+    </labels>
+    <labels>
+        <fullName>SOM_PEConfigurationsComboboxLabel</fullName>
+        <categories>SOM_ProcessExceptionNotification</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SOM_PEConfigurationsComboboxLabel</shortDescription>
+        <value>Settings:</value>
+    </labels>
+    <labels>
+        <fullName>SOM_PEConfigurationsComboboxPlaceHolder</fullName>
+        <categories>SOM_ProcessExceptionNotification</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SOM_PEConfigurationsComboboxPlaceHolder</shortDescription>
+        <value>Select Configuration</value>
+    </labels>
+    <labels>
+        <fullName>SOM_PERecordCreatedMessage</fullName>
+        <categories>SOM_ProcessExceptionNotification</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SOM_PERecordCreatedMessage</shortDescription>
+        <value>Configuration record succesfully created</value>
+    </labels>
+    <labels>
+        <fullName>SOM_PERecordUpdatedMessage</fullName>
+        <categories>SOM_ProcessExceptionNotification</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SOM_PERecordUpdatedMessage</shortDescription>
+        <value>Configuration record succesfully saved</value>
+    </labels>
+    <labels>
+        <fullName>SOM_RecipientSearchInputRecordTypeLabel</fullName>
+        <categories>SOM_ProcessExceptionNotification</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SOM_RecipientSearchInputRecordTypeLabel</shortDescription>
+        <value>Record Types:</value>
+    </labels>
+    <labels>
+        <fullName>SOM_RecipientSearchInputRecordsLabel</fullName>
+        <categories>SOM_ProcessExceptionNotification</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SOM_RecipientSearchInputRecordsLabel</shortDescription>
+        <value>Records:</value>
+    </labels>
+    <labels>
+        <fullName>SOM_RecordCreationErrorTitle</fullName>
+        <categories>SOM_ProcessExceptionNotification</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SOM_RecordCreationErrorTitle</shortDescription>
+        <value>Error creating record</value>
+    </labels>
+    <labels>
+        <fullName>SOM_RecordUpdationErrorTitle</fullName>
+        <categories>SOM_ProcessExceptionNotification</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SOM_RecordUpdationErrorTitle</shortDescription>
+        <value>Error updating record</value>
+    </labels>
+    <labels>
+        <fullName>SOM_SalesChannelsNotReceivedErrorMessage</fullName>
+        <categories>SOM_ProcessExceptionNotification</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SOM_SalesChannelsNotReceivedErrorMessage</shortDescription>
+        <value>Sales Channels could not be received</value>
+    </labels>
+    <labels>
+        <fullName>SOM_Save</fullName>
+        <categories>SOM_ProcessExceptionNotification</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SOM_Save</shortDescription>
+        <value>Save</value>
+    </labels>
+    <labels>
+        <fullName>SOM_SaveAs</fullName>
+        <categories>SOM_ProcessExceptionNotification</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SOM_SaveAs</shortDescription>
+        <value>Save As</value>
+    </labels>
+    <labels>
+        <fullName>SOM_StatefulButtonTitle</fullName>
+        <categories>SOM_ProcessExceptionNotification</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SOM_StatefulButtonTitle</shortDescription>
+        <value>Choose all applicable values for</value>
+    </labels>
+    <labels>
+        <fullName>SOM_UnknownErrorMessage</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SOM_UnknownErrorMessage</shortDescription>
+        <value>Unknown error</value>
+    </labels>
+    <labels>
+        <fullName>SOM_ConfigurationNameMustBeUnique</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SOM_ConfigurationNameMustBeUnique</shortDescription>
+        <value>Configuration name must be unique</value>
+    </labels>
+</CustomLabels>

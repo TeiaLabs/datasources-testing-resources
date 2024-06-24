@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ValidateErrorEmailRecipientsList</fullName>
+    <active>false</active>
+    <errorConditionFormula>NOT (
+				REGEX (
+								ErrorEmailRecipients__c,
+								&quot;([A-Za-z0-9]+([!#$%&amp;&apos;*+-/=?^_`{|}~]*[A-Za-z0-9]+)*@[A-Za-z0-9\\-]+(\\.[A-Za-z0-9\\-]+)*[ ]*[,;]?[ ]*)+&quot;
+    )
+)</errorConditionFormula>
+    <errorDisplayField>ErrorEmailRecipients__c</errorDisplayField>
+    <errorMessage>Invalid Email Recipients.</errorMessage>
+</ValidationRule>

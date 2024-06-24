@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>FulfillmentOrder.CancelReason__c</members>
+		<name>CustomField</name>
+	</types>
+	<types>
+		<members>FulfillmentOrder-SOM Fulfillment Order Layout</members>
+		<name>Layout</name>
+	</types>
+    <types>
+		<members>FulfillmentOrder.SOM_Cancel_Reason_Required</members>
+		<name>ValidationRule</name>
+	</types>
+	<version>55.0</version>
+</Package>

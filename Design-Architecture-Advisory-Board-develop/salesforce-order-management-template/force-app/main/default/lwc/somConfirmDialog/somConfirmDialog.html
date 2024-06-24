@@ -1,0 +1,13 @@
+<template>
+    <template if:true={isModalOpen}>
+        <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+            <p><b>{text}</b></p>
+        </div>
+        <footer class="slds-modal__footer">
+            <button class="slds-button slds-button_neutral" onclick={handleCancel} title="No">
+                <label>No</label>
+            </button>
+            <button class="slds-button slds-button_brand" onclick={handleConfirm} title="Yes">Yes</button>
+        </footer>
+    </template>
+ </template>

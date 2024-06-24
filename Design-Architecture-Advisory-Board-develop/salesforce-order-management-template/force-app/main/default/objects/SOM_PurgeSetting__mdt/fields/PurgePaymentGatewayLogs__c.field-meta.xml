@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PurgePaymentGatewayLogs__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Purge payment gateway logs flag</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Purge Payment Gateway Logs</label>
+    <type>Checkbox</type>
+</CustomField>

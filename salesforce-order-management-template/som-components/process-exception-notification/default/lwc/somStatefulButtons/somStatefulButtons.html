@@ -1,0 +1,10 @@
+<template>
+	<div style="margin-bottom: 10px;margin-top: 10px;">
+		<h1>{titleOfButtonGroup}</h1>
+		<template for:each={buttonsOfField} for:item="button">
+			<lightning-button-stateful key={button.Label} variant={button.variant} class={button.Label} label-when-off={button.Label} label-when-on={button.Label} icon-name-when-off="utility:add" icon-name-when-on="utility:check"
+				icon-name-when-hover="utility:close" selected={button.Checked} onclick={handleClick}>
+			</lightning-button-stateful>
+		</template>
+	</div>
+</template>

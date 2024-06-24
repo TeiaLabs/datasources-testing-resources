@@ -1,0 +1,36 @@
+name: SFDX Actions
+on:
+  pull_request:
+    types: [opened, reopened, synchronize]
+
+jobs:
+  pmd_scan:
+    runs-on: ubuntu-latest
+    steps:
+      # To use this repository's private action,
+      # you must check out the repository
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Install Salesforce CLI
+        run: |
+          wget https://developer.salesforce.com/media/salesforce-cli/sfdx/channels/stable/sfdx-linux-x64.tar.xz -q
+          mkdir sfdx
+          tar xJf sfdx-linux-x64.tar.xz -C sfdx --strip-components 1
+          echo "sfdx/bin" >> $GITHUB_PATH
+      - name: Install Salesforce Scanner CLI Plugin
+        run: sfdx plugins:install @salesforce/sfdx-scanner
+      - name: Code Scan Action Step
+        uses: ./salesforce-order-management-template/github-actions/code-scanner # Uses an action in the root directory
+        with:
+          owner: ${{ github.repository_owner }}
+          repo: ${{ github.event.repository.name }}
+          pr_number: ${{ github.event.number }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+      # - name: Create Scratch Org & Deploy Codes & Run Tests
+      #   uses: ./github-actions/scratch-org-deploy
+      #   with:
+      #     owner: ${{ github.repository_owner }}
+      #     repo: ${{ github.event.repository.name }}
+      #     pr_number: ${{ github.event.number }}
+      #     token: ${{ secrets.GITHUB_TOKEN }}
+      #     devhub_auth_url: ${{secrets.DEV_HUB_AUTH_URL}}

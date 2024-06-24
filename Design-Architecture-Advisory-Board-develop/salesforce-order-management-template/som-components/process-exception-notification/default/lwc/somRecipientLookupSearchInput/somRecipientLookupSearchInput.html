@@ -1,0 +1,18 @@
+<template>
+    <div class="slds-grid slds-wrap">
+        <div class="slds-col slds-size_3-of-12">
+            <lightning-combobox options={itemtypes} onchange={currentItemTypeChange} label={customLabels.SOM_RecipientSearchInputRecordTypeLabel}></lightning-combobox>
+        </div>
+        <div class="slds-col slds-size_9-of-12">
+            <lightning-combobox value={selectedItemId} options={potentialItems} onchange={selectedItemChange} label={customLabels.SOM_RecipientSearchInputRecordsLabel}
+            placeholder="Select Recipient"></lightning-combobox>
+        </div>
+    </div>
+    <template if:true={selecteditems}>
+        <template for:each={selecteditems} for:item="item" for:index="index">
+            <lightning-pill label={item.label} key={item.key} data-index={index} onremove={handleRemovePill}>
+                <lightning-icon icon-name={item.icon} alternative-text="User"></lightning-icon>
+            </lightning-pill>
+        </template>
+    </template>  
+</template>

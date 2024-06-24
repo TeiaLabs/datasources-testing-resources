@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>SOM_RejectOrderLineItem__c</members>
+		<name>CustomObject</name>
+	</types>
+	<types>
+		<members>SOM_RejectOrderLineItem__c.FulfillmentOrderLineItemId__c</members>
+		<members>SOM_RejectOrderLineItem__c.Name__c</members>
+		<members>SOM_RejectOrderLineItem__c.Quantity__c</members>
+		<members>SOM_RejectOrderLineItem__c.Reason__c</members>
+		<members>FulfillmentOrder.CancelReason__c</members>
+		<name>CustomField</name>
+	</types>
+	<types>
+		<members>FulfillmentOrder.SOM_Cancel_Reason_Required</members>
+		<name>ValidationRule</name>
+	</types>
+	<types>
+		<members>FulfillmentOrder-SOM Fulfillment Order Layout</members>
+		<name>Layout</name>
+	</types>
+	 <types>
+        <members>somRejectFulfillmentOrderProductSelector</members>
+        <name>LightningComponentBundle</name>
+    </types>
+	<types>
+		<members>SOM_RejectFulfillmentOrderPartially</members>
+		<name>Flow</name>
+	</types>
+	<types>
+		<members>FulfillmentOrder.SOM_RejectFulfillmentOrderPartially</members>
+		<name>QuickAction</name>
+    </types>
+	<types>
+		<members>SOM_RejectProductItemParam</members>
+		<name>ApexClass</name>
+	</types>
+	<version>55.0</version>
+</Package>

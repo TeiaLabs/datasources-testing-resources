@@ -1,0 +1,28 @@
+<template>
+    <lightning-card>
+        <div class="slds-m-around_medium">
+            <template if:true={doesAnySalesChannelExist}>
+                <lightning-tabset variant="vertical">
+                    <template for:each={salesChannels} for:item="salesChannel">
+                        <lightning-tab key={salesChannel.Id} label={salesChannel.SalesChannelName}>
+                            <lightning-tabset>
+                                <lightning-tab label="Chatter">
+                                     <c-som-chatter-configuration saleschannelid = {salesChannel.Id}></c-som-chatter-configuration> 
+                                </lightning-tab>
+                                <lightning-tab label="Custom Notification" >
+                                     <c-som-custom-notification-configuration saleschannelid = {salesChannel.Id}></c-som-custom-notification-configuration>
+                                </lightning-tab>
+                                <lightning-tab label="Email">
+                                    <c-som-email-configuration saleschannelid = {salesChannel.Id}></c-som-email-configuration>
+                                </lightning-tab>
+                            </lightning-tabset>
+                        </lightning-tab>
+                    </template>
+                </lightning-tabset>
+            </template>
+            <template if:false={doesAnySalesChannelExist}>
+                <div class="slds-align_absolute-center" style="height:5rem">There are no sales channels in the organization.</div>
+            </template>
+        </div>
+    </lightning-card>
+</template>
